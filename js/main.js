@@ -38,11 +38,11 @@
 
 	var carousel = function() {
 		$('.carousel-testimony').owlCarousel({
-			autoplay: true,
+			autoplay: false,
 			autoHeight: true,
 			center: true,
 			loop: true,
-			items:1,
+			items:2,
 			margin: 30,
 			stagePadding: 0,
 			nav: false,

@@ -12399,18 +12399,24 @@ h5,
 
 .owl-carousel {
   position: relative;
+
 }
 
 .owl-carousel .owl-item {
   opacity: .4;
+
 }
 
 .owl-carousel .owl-item.active {
   opacity: 1;
+
 }
 
 .owl-carousel .owl-dots {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .owl-carousel .owl-dots .owl-dot {
@@ -13137,6 +13143,16 @@ h5,
   background: #040e26;
 }
 
+.aside-stretch-right-team:before {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  content: '';
+  width: 360%;
+  background: #040e26;
+}
+
 @media (max-width: 767.98px) {
   .aside-stretch-right {
     background: #040e26;
@@ -13548,7 +13564,7 @@ textarea.form-control {
 .img,
 .blog-img,
 .user-img {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -14022,7 +14038,7 @@ textarea.form-control {
 }
 
 .block-2 .back {
-  background: #fc5e28;
+  /* background: #fc5e28; */
   -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
   -webkit-transform: rotateY(-180deg);
@@ -14030,6 +14046,42 @@ textarea.form-control {
   -o-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.block-2-back-1 {
+  background-image: url(/images/team/1.jpg);
+}
+
+.block-2-back-2 {
+  background-image: url(/images/team/2.jpg);
+}
+
+.block-2-back-3 {
+  background-image: url(/images/team/3.jpg);
+}
+
+.block-2-back-4 {
+  background-image: url(/images/team/4.jpg);
+}
+
+.block-2-back-5 {
+  background-image: url(/images/team/5.jpg);
+}
+
+.block-2-back-6 {
+  background-image: url(/images/team/6.jpg);
+}
+
+.block-2-back-7 {
+  background-image: url(/images/team/7.jpg);
+}
+
+.block-2-back-8 {
+  background-image: url(/images/team/1.jpg);
 }
 
 .block-2 .back p {
@@ -14803,4 +14855,44 @@ textarea.form-control {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 
+}
+
+.video-container {
+  width: 315px;
+  /* Ширина як у iframe */
+  height: 560px;
+  /* Висота як у iframe */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Важливо для обрізки, якщо iframe менший за вміст */
+  border-radius: 20px;
+}
+
+iframe {
+  display: block;
+  /* Прибираємо зайві прогалини */
+  margin: 0;
+  padding: 0;
+}
+
+.display-list-shorts {
+  gap: 40px;
+  justify-content: center;
+}
+
+.display-item-shorts {
+  margin-bottom: 100px;
+}
+
+.owl-dots-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-videos-list {
+    display: grid;
+    gap: 60px;
+  }
 }
