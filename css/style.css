@@ -14895,6 +14895,10 @@ iframe {
     display: grid;
     gap: 60px;
   }
+
+  .form-google {
+    width: 350px;
+  }
 }
 
 
@@ -14906,3 +14910,4 @@ background-size: cover;
 .text-numbers {
   color: white !important;
 }
+
