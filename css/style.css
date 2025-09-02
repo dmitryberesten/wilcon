@@ -13838,11 +13838,11 @@ textarea.form-control {
   display: block;
   width: 60%;
   margin-bottom: 5px;
-  background: rgba(0, 0, 0, 0.05);
-  background: #fff;
+  background:#fc5e28;
   padding: 10px 20px;
   position: relative;
   z-index: 0;
+  color: white;
 }
 
 @media (max-width: 767.98px) {
@@ -14895,4 +14895,14 @@ iframe {
     display: grid;
     gap: 60px;
   }
+}
+
+
+
+.background-image-numbers {
+background-size: cover;
+}
+
+.text-numbers {
+  color: white !important;
 }
