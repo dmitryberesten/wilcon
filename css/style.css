@@ -1,5 +1,10 @@
 
+/* ...existing code... */
 :root {
+/* Fix for mobile scroll jump: use min-height instead of JS */
+.js-fullheight {
+  min-height: 100vh;
+}
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
